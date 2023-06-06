@@ -23,15 +23,14 @@ const Header = (props: Props) => {
                 className="w-full px-4 py-3 pr-10 text-sm rounded-md focus:outline-none focus:ring focus:border-blue-300"
                 />
                 <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                    <GoSearch className='w-5 h-5 text-gray-500' />
+                    <GoSearch className="w-5 h-5 text-gray-500" />
                 </div>
             </div>
 
             {/* User Avatar */}
             <div>
-                <Avatar name='Jacob Kim' round size='50' color='#0c63e7' className='text-xl' />
+                <Avatar name="Jacob Kim" round size="50" color="#0c63e7" className="text-xl" />
             </div>
-
 
         </header>
 )}

@@ -1,6 +1,7 @@
 import Header from '@/components/header';
 import AIPrompt from '@/components/prompt/AIPrompt';
 import Board from '@/components/board';
+import Footer from '@/components/footer';
 
 const lists = [
   {
@@ -31,11 +32,15 @@ const lists = [
 
 
 export default function Home() {
-  return (
-    <main>
+  return(
+    <div>
       <Header />
-      <AIPrompt />
-      <Board lists={lists} />
-    </main>
-  )
-}
+        <main className="bg-gray-100 py-20">
+          <AIPrompt />
+          <div className='flex justify-center'>
+            <Board lists={lists} />
+          </div>
+        </main>
+      <Footer />
+    </div>
+)}
